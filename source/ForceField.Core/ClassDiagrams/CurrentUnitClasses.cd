@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ForceField.Core.Managers.UnitsManager">
+    <Position X="4.75" Y="1" Width="1.75" />
+    <Members>
+      <Field Name="backgroundsService" Hidden="true" />
+      <Field Name="buildingsService" Hidden="true" />
+      <Field Name="charactersService" Hidden="true" />
+      <Method Name="ConstructInitialUnits" Hidden="true" />
+      <Method Name="RegisterServices" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="UnitsManager" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AYQCAAAQAAAAAwAEAQAAAAAAAAAAAAAAAoACAAAAAAQ=</HashCode>
+      <FileName>Managers\UnitsManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CharactersService" />
+      <Property Name="BuildingsService" />
+      <Property Name="BackgroundsService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.DrawableGameComponent">
+    <Position X="1.75" Y="1" Width="2.25" />
+    <Members>
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="DrawableGameComponent" Hidden="true" />
+      <Property Name="DrawOrder" Hidden="true" />
+      <Event Name="DrawOrderChanged" Hidden="true" />
+      <Property Name="GraphicsDevice" Hidden="true" />
+      <Method Name="OnDrawOrderChanged" Hidden="true" />
+      <Method Name="OnVisibleChanged" Hidden="true" />
+      <Property Name="Visible" Hidden="true" />
+      <Event Name="VisibleChanged" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ForceField.Core.Services.UnitsService&lt;U&gt;">
+    <Position X="8" Y="1" Width="1.75" />
+    <Members>
+      <Method Name="SetSpriteService" Hidden="true" />
+      <Field Name="spriteService" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="UnitsService" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAAACEAAAAAAAAAAAAABAAEAAAAAAAAAA=</HashCode>
+      <FileName>Services\UnitsService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.802" />
+  </Class>
+  <Class Name="ForceField.Domain.GameLogic.Unit">
+    <Position X="8" Y="5" Width="1.75" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="Unit" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ForceField.Domain.GameLogic.Character">
+    <Position X="4.75" Y="5" Width="1.75" />
+    <Members>
+      <Method Name="Character" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ForceField.Domain.Entity">
+    <Position X="11.25" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="Entity" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="ForceField.Interfaces.IUnitsService&lt;T&gt;">
+    <Position X="8" Y="3" Width="1.75" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

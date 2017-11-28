@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ForceField.Core.MetaUnitExemplar">
+    <Position X="10.5" Y="3.25" Width="1.75" />
+    <Members>
+      <Field Name="animationNow" Hidden="true" />
+      <Field Name="dragging" Hidden="true" />
+      <Field Name="frameNow" Hidden="true" />
+      <Field Name="hp" Hidden="true" />
+      <Field Name="mana" Hidden="true" />
+      <Field Name="plan" Hidden="true" />
+      <Field Name="selected" Hidden="true" />
+      <Field Name="totalElapsed" Hidden="true" />
+      <Field Name="unitExPosition" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAIgQAACAAAAAFAAAADQQBAIoAAQCI=</HashCode>
+      <FileName>MetaUnitExemplar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ForceField.Core.MetaUnitType">
+    <Position X="7.5" Y="3.25" Width="1.75" />
+    <Members>
+      <Field Name="animationCount" Hidden="true" />
+      <Field Name="armor" Hidden="true" />
+      <Field Name="damage" Hidden="true" />
+      <Field Name="damageRange" Hidden="true" />
+      <Field Name="frameCount" Hidden="true" />
+      <Field Name="isBarrier" Hidden="true" />
+      <Field Name="maxHp" Hidden="true" />
+      <Field Name="maxMana" Hidden="true" />
+      <Field Name="selectorTexture" Hidden="true" />
+      <Field Name="size" Hidden="true" />
+      <Field Name="speed" Hidden="true" />
+      <Field Name="stat" Hidden="true" />
+      <Field Name="textureName" Hidden="true" />
+      <Field Name="textureNumberInArray" Hidden="true" />
+      <Field Name="timeFrame" Hidden="true" />
+      <Field Name="unitName" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>GAMAAVCBECBAgAAAAIEAAQABAAAAA4AiECKAIBggAAA=</HashCode>
+      <FileName>MetaUnitType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Exemplars" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ForceField.Core.UnitOfOneType">
+    <Position X="4.5" Y="3.25" Width="1.75" />
+    <Members>
+      <Field Name="currentUnitType" Hidden="true" />
+      <Field Name="numberInArray" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAIAAUAAAwAAAAAAAAAAAAAAAAAQUAAAABA=</HashCode>
+      <FileName>UnitOfOneType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CurrentUnitType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ForceField.Core.UnitsArray">
+    <Position X="1.5" Y="3.25" Width="1.75" />
+    <Members>
+      <Field Name="smthSelectedAndDragging" Hidden="true" />
+      <Field Name="units" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Units" Type="ForceField.Core.UnitOfOneType">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.287" Y="0.06" Height="0.182" Width="0.74" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AECAAAAAAAAAAAAEAAAAAAAACCAQAAAAECAAAAAIAAA=</HashCode>
+      <FileName>UnitsArray.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Units" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

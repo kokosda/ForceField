@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{CA7264C2-5259-4CCD-A808-F899FB1C8723}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ForceField.GameState</RootNamespace>
+    <AssemblyName>ForceField.GameState</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>22c80540-5e5e-4cfd-992d-dd526ded4fe3</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IGameScreenService.cs" />
+    <Compile Include="Interfaces\IMenuScreen.cs" />
+    <Compile Include="Interfaces\IScreenFactory.cs" />
+    <Compile Include="Models\BackgroundScreen.cs" />
+    <Compile Include="Models\Base\GameScreen.cs" />
+    <Compile Include="Models\Base\InputAction.cs" />
+    <Compile Include="Models\Base\ScreenState.cs" />
+    <Compile Include="Models\BattleScreen.cs" />
+    <Compile Include="Models\GameplayScreen.cs" />
+    <Compile Include="Models\GlobalMapScreen.cs" />
+    <Compile Include="Models\LoadingScreen.cs" />
+    <Compile Include="Models\MainMenuScreen.cs" />
+    <Compile Include="Models\MenuScreen.cs" />
+    <Compile Include="Models\MessageBoxScreen.cs" />
+    <Compile Include="Models\OptionsMenuScreen.cs" />
+    <Compile Include="Models\PauseMenuScreen.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenManager.cs" />
+    <Compile Include="Services\BackgroundScreenServiceImpl.cs" />
+    <Compile Include="Services\Base\GameScreenService.cs" />
+    <Compile Include="Models\MenuEntry.cs" />
+    <Compile Include="Services\Base\MenuScreenService.cs" />
+    <Compile Include="Models\Base\PlayerIndexEventArgs.cs" />
+    <Compile Include="Services\BattleScreenServiceImpl.cs" />
+    <Compile Include="Services\GameplayScreenServiceImpl.cs" />
+    <Compile Include="Services\GlobalMapScreenServiceImpl.cs" />
+    <Compile Include="Services\LoadingScreenServiceImpl.cs" />
+    <Compile Include="Services\MainMenuScreenServiceImpl.cs" />
+    <Compile Include="Services\MessageBoxScreenServiceImpl.cs" />
+    <Compile Include="Services\OptionsMenuScreenServiceImpl.cs" />
+    <Compile Include="Services\PauseMenuScreenServiceImpl.cs" />
+    <Compile Include="Services\ScreenFactory.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ForceField.Core\ForceField.Core.csproj">
+      <Project>{078AFF5A-DC6D-4729-9BAF-50A1E5A19C1A}</Project>
+      <Name>ForceField.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForceField.Domain\ForceField.Domain.csproj">
+      <Project>{32B9C8BC-9643-4C3E-8CAD-88B48C9D9262}</Project>
+      <Name>ForceField.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ForceField.Interfaces\ForceField.Interfaces.csproj">
+      <Project>{2D1E88DB-6DC8-4A09-B6F1-0C66878BF716}</Project>
+      <Name>ForceField.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Forcefield.UI\ForceField.UI.csproj">
+      <Project>{CDB1F315-F5AE-491A-9A0E-80062E6B04D0}</Project>
+      <Name>ForceField.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32B9C8BC-9643-4C3E-8CAD-88B48C9D9262}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ForceField.Domain</RootNamespace>
+    <AssemblyName>ForceField.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CameraData.cs" />
+    <Compile Include="Comparers\LayerSort.cs" />
+    <Compile Include="Comparers\PathNode.cs" />
+    <Compile Include="Content\ContentResource.cs" />
+    <Compile Include="GameLogic\ContentResourceType.cs" />
+    <Compile Include="Cursor.cs" />
+    <Compile Include="GameLogic\Ability.cs" />
+    <Compile Include="GameLogic\Artefact.cs" />
+    <Compile Include="GameLogic\Battle.cs" />
+    <Compile Include="GameLogic\BattlePhase.cs" />
+    <Compile Include="GameLogic\BattleUnit.cs" />
+    <Compile Include="GameLogic\BattleUnitDescription.cs" />
+    <Compile Include="GameLogic\BattleUnitSize.cs" />
+    <Compile Include="GameLogic\ColorDescription.cs" />
+    <Compile Include="GameLogic\Creature.cs" />
+    <Compile Include="GameLogic\CreatureSpell.cs" />
+    <Compile Include="GameLogic\DomainMath.cs" />
+    <Compile Include="GameLogic\Hero.cs" />
+    <Compile Include="GameLogic\Hexagon.cs" />
+    <Compile Include="GameLogic\Item.cs" />
+    <Compile Include="GameLogic\Line2D.cs" />
+    <Compile Include="GameLogic\Location.cs" />
+    <Compile Include="GameLogic\GlobalMap.cs" />
+    <Compile Include="GameLogic\NationColor.cs" />
+    <Compile Include="GameLogic\Perfomance.cs" />
+    <Compile Include="GameLogic\HeroSpell.cs" />
+    <Compile Include="GameLogic\SpellLibrary.cs" />
+    <Compile Include="GameLogic\SpellLibrarySlot.cs" />
+    <Compile Include="GameLogic\SpellType.cs" />
+    <Compile Include="GameLogic\Tile.cs" />
+    <Compile Include="GameLogic\TileMap.cs" />
+    <Compile Include="Input\MouseButton.cs" />
+    <Compile Include="Input\MouseScroll.cs" />
+    <Compile Include="Interface\EmitterType.cs" />
+    <Compile Include="Renderer\CircleEmitter.cs" />
+    <Compile Include="Renderer\Emitter.cs" />
+    <Compile Include="Renderer\LineEmitter.cs" />
+    <Compile Include="Renderer\Base\EmitterInfo.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="GameLogic\Background.cs" />
+    <Compile Include="GameLogic\Block.cs" />
+    <Compile Include="GameLogic\Building.cs" />
+    <Compile Include="GameLogic\Character.cs" />
+    <Compile Include="GameLogic\Level.cs" />
+    <Compile Include="GameLogic\NonPlayerCharacter.cs" />
+    <Compile Include="GameLogic\PlayerCharacter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderer\Animation.cs" />
+    <Compile Include="Renderer\Base\AnimationType.cs" />
+    <Compile Include="Renderer\Base\AnimatedActions.cs" />
+    <Compile Include="Renderer\Base\KeyFrame.cs" />
+    <Compile Include="Renderer\Base\Particle.cs" />
+    <Compile Include="Renderer\Base\RenderEntity.cs" />
+    <Compile Include="Renderer\PointEmitter.cs" />
+    <Compile Include="Renderer\RenderData.cs" />
+    <Compile Include="Renderer\Sprite.cs" />
+    <Compile Include="GameLogic\Comparers\UnitByNameEqualityComparer.cs" />
+    <Compile Include="Renderer\MenuEmitter.cs" />
+    <Compile Include="GameLogic\Unit.cs" />
+    <Compile Include="Renderer\SpriteText.cs" />
+    <Compile Include="SaveTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GameLogic\Battle\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
